@@ -15,6 +15,7 @@ app.post("/pessoas", (req, res) => {
   const pessoa = req.body;
   pessoas.push(pessoa);
   res.status(201).json(pessoa);
+  return res.json("hello word")
 });
 
 app.listen(port, () => {
